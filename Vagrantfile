@@ -8,6 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos65"
   config.vm.host_name = "centos65-base"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box"
+  config.vm.synced_folder "./built_package", "/vagrant_data"
 
 # Puppet
   
