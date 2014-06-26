@@ -32,7 +32,7 @@ class packagebuild {
     require  => Package['ruby-devel', 'rpm-build'],
   }
 
-  $build_utils = [ 'gcc', 'gcc-c++', 'autoconf', 'automake', 'libtool', 'cppunit-devel', 'cppunit', 'libicu', 'libicu-devel', 'python-setuptools', 'libxslt-devel', 'pcre-devel', 'openssl-devel', 'gd-devel', 'GeoIP-devel', 'php-devel', 'erlang', 're2c' ]
+  $build_utils = [ 'gcc', 'gcc-c++', 'autoconf', 'automake', 'libtool', 'cppunit-devel', 'cppunit', 'libicu', 'libicu-devel', 'python-setuptools', 'libxslt-devel', 'pcre-devel', 'openssl-devel', 'gd-devel', 'GeoIP-devel', 'php-devel', 'erlang', 're2c', 'lua-devel', 'lua-static' ]
 
   package { $build_utils:
     ensure  => latest,
